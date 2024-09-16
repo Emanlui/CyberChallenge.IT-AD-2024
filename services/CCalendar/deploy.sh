@@ -21,4 +21,4 @@ openssl req -x509 \
 secret="$(openssl rand -hex 32)"
 sed -i -e "s/CRYPT_SECRET=dummy/CRYPT_SECRET=$secret/" docker-compose.yml
 
-docker compose up -d --build
+docker-compose up -d --build
