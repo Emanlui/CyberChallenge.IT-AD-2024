@@ -5,4 +5,4 @@ if [ ! -f .env ]; then
     echo $RANDOM | md5sum >> .env
 fi
 
-docker compose up --build -d
+docker-compose up --build -d
